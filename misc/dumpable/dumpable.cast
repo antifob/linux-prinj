@@ -1,0 +1,13 @@
+{"version": 2, "width": 80, "height": 25, "timestamp": 1652902998, "env": {"SHELL": "/bin/mksh", "TERM": "screen"}}
+[0.006515, "o", "\u001b[?1049h\u001b[?1h\u001b=\u001b[H\u001b[J\u001b[34h\u001b[?25h\u001b[?1000l\u001b[?1002l\u001b[?1003l\u001b[?1006l\u001b[?1005l\u001b[m\u000f\u001b[34h\u001b[?25h\u001b[?1006l\u001b[?1000l\u001b[?1002l\u001b[?1003l\u001b[?2004l\u001b[1;1H\u001b[1;25r\u001b[>c\u001b[>q\u001b[1;1H"]
+[0.006849, "o", "\u001b[?25l\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\u001b[30m\u001b[47m\r\n0:mksh*                                                                         \u001b[m\u000f\u001b[34h\u001b[?25h\u001b[1;1H\u001b[m\u000f\u001b[34h\u001b[?25h\u001b[?1006l\u001b[?1000l\u001b[?1002l\u001b[?1003l\u001b[?2004l\u001b[1;1H\u001b[1;25r\u001b[1;1H\u001b[?25l\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\u001b[30m\u001b[47m\r\n0:mksh*                                                                         \u001b[m\u000f\u001b[34h\u001b[?25h\u001b[1;1H"]
+[0.007025, "o", "\u001b[?7727h\u001b[?7727h"]
+[0.010292, "o", "$ "]
+[0.963222, "o", "\u001b[?25l\u001b[13;1H─────────────────────────────────────────\u001b[32m───────────────────────────────────────\u001b[m\u000f\u001b[1;1H$ \u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\u001b[2B\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\u001b[30m\u001b[47m\r\n0:mksh*                                                                         \u001b[m\u000f\u001b[34h\u001b[?25h\u001b[14;1H"]
+[0.974571, "o", "$ "]
+[1.968254, "o", "\u001b[1d./du\u001b[14;3H\u001b[1;7Hmpable\u001b[14;3H"]
+[1.969536, "o", "\u001b[2;1HYou may run 'strace -p 17250' to attach to me\u001b[14;3H"]
+[1.97163, "o", "strace -p $(pgrep dumpable)"]
+[2.976362, "o", "\r\n"]
+[2.994676, "o", "strace: attach: ptrace(PTRACE_SEIZE, 17250): Opération non permise\r\n"]
+[2.994889, "o", "$ "]

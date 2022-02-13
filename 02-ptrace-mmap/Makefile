@@ -11,22 +11,21 @@ GETSC=	getsc(){ objdump -d "$${1}" | \
 		xargs printf; }; getsc
 
 ASM=	hello.s
-SRC=	ptrace.c victim.c
-OBJ=	${SRC:.c=.o}
-SOBJ=	${ASM:.s=.o}
+SRC=	inject.c victim.c
+AOBJ=	${ASM:.s=.o}
 BIN=	${SRC:.c=}
-SBIN=	${ASM:.s=}
+ABIN=	${ASM:.s=}
 
 
-all: ${BIN} ${SBIN}
+all: ${BIN} ${ABIN}
 ${BIN}:
 
-${SBIN}: ${SOBJ}
+${ABIN}: ${AOBJ}
 	${GETSC} $< >$@
-	
+
 
 clean:
-	rm -f ${OBJ} ${SOBJ} ${BIN}
+	rm -f ${AOBJ} ${BIN} ${ABIN}
 
 
 .SUFFIXES: .s.o

@@ -9,7 +9,7 @@ process injection using `ptrace`.
 - `victim.c` is a simple program that prints it's pid and sleeps
   for a second, in a loop.
 
-- `ptrace.c` contains the shellcode injection program. It takes the
+- `inject.c` contains the shellcode injection program. It takes the
   pid of the target process and the shellcode to inject.
 
 
@@ -23,5 +23,5 @@ make
 ./victim
 
 # in another terminal
-./ptrace $(pgrep victim) ./hello
+./inject ./hello $(pgrep victim)
 ```

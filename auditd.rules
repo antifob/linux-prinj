@@ -1,0 +1,41 @@
+#
+#                         DISCLAIMER
+#
+#                    USE AT YOUR OWN RISK.
+#
+#       THIS RULESET COMES WITH NO WARRANTIES OF ANY FORM.
+#
+
+# /proc/$pid/mem and /proc/self/mem
+# WARNING: generates a lot of noise
+-w /proc/ -p w -k code_injection
+
+
+## 32 bits
+
+# ptrace: POKETEXT, POKEDATA, POKEUSER (memory writes)
+-a always,exit -F arch=b32 -S ptrace -F a0=4 -k code_injection
+-a always,exit -F arch=b32 -S ptrace -F a0=5 -k code_injection
+-a always,exit -F arch=b32 -S ptrace -F a0=6 -k code_injection
+# ptrace: SETREGS, SETREGSET (execution flow redirection)
+-a always,exit -F arch=b32 -S ptrace -F a0=13 -k code_injection
+-a always,exit -F arch=b32 -S ptrace -F a0=0x4205 -k code_injection
+# ptrace: in general
+-a always,exit -F arch=b32 -S ptrace -k ptrace
+# process_vm_writev
+-a always,exit -F arch=b32 -S process_vm_writev -k code_injection
+
+
+## 64 bits
+
+# ptrace: POKETEXT, POKEDATA, POKEUSER (memory writes)
+-a always,exit -F arch=b64 -S ptrace -F a0=4 -k code_injection
+-a always,exit -F arch=b64 -S ptrace -F a0=5 -k code_injection
+-a always,exit -F arch=b64 -S ptrace -F a0=6 -k code_injection
+# ptrace: SETREGS, SETREGSET (execution flow redirection)
+-a always,exit -F arch=b64 -S ptrace -F a0=13 -k code_injection
+-a always,exit -F arch=b64 -S ptrace -F a0=0x4205 -k code_injection
+# ptrace: in general
+-a always,exit -F arch=b64 -S ptrace -k ptrace
+# process_vm_writev
+-a always,exit -F arch=b64 -S process_vm_writev -k code_injection
